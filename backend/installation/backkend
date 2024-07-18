@@ -1,0 +1,2 @@
+npm install bcryptjs=>for using the hash and salt 
+npm i jsonwebtoken=>converting out hash password into tokens
