@@ -67,7 +67,7 @@ router.put('/updatenote/:id',fetchuser,async(req,res)=>{
     res.status(500).send('Server Error');
  }
 
-})
+});
 
 
 // Route 4:  deleting an exising notes
@@ -88,6 +88,6 @@ router.delete('/deletenote/:id',fetchuser,async(req,res)=>{
         console.error(error.message);
         res.status(500).send('Server Error');
     }
-})
+});
 
 module.exports= router
