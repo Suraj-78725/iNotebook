@@ -1,20 +1,26 @@
 const { type } = require('@testing-library/user-event/dist/type');
 const mongoose = require('mongoose');
-
+const { Schema } = mongoose;
 const NotesSchema=new Schema({
+    // for notes authentication 
+    user:
+    {
+    type:mongoose.Schema.Types.ObjectId,
+    ref:'user'
+    },
     title:{
-        type:String,
+        type: String,
         required:true
     },
     description:{
-        type:String,
+        type:  String,
         required:true
     },
     tag:{
-        type:String
+        type: String
     },
     date:{
-        type:Date,
+        type: Date,
         default:Date.now
     }
 });
