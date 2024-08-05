@@ -1,0 +1,30 @@
+.scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .scrolling-text-inner {
+    display: inline-block;
+    animation: scroll var(--marquee-speed) linear infinite;
+    white-space: nowrap;
+  }
+  
+  .scrolling-text {
+    display: flex;
+  }
+  
+  .scrolling-text-item {
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -17,6 +17,7 @@ const Noteitem = (props) => {
     
         </div>
       </div>
+      
     </div>
   );
 };
