@@ -1,10 +1,11 @@
-import React,{useContext, useEffect} from 'react'
+import React from 'react'
+import Portfilio from './Portfilio'
 const About=()=> {
-
   return (
-    <div>
-      this About page 
+    <div className="w-100">
+       <Portfilio/>
     </div>
+
   )
 }
 
