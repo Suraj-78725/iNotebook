@@ -27,11 +27,11 @@ const onchange=(e)=>
   </div>
   <div className="mb-3">
     <label htmlFor="description" className="form-label">Description</label>
-    <input type="textarea" className="form-control" id="description" name="description" value={note.description} onChange={onchange} minLength={5} required/>
+    <textarea type="textarea" className="form-control" id="description" name="description" value={note.description} onChange={onchange} minLength={5} required/>
   </div>
   <div className="mb-3">
     <label htmlFor="tag" className="form-label">Tag</label>
-    <input type="textarea" className="form-control" id="tag" name="tag" value={note.tag} onChange={onchange} minLength={5} required/>
+    <input type="number" className="form-control" id="tag" name="tag" value={note.tag} onChange={onchange} minLength={5} required/>
   </div>
   <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleclick}>Add Note</button>
 </form>
